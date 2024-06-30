@@ -14,7 +14,6 @@ canvas = tkinter.Canvas(tk, width = 500, height = 400, bd = 0, highlightthicknes
 canvas.pack()
 tk.update()
 
-
 playerPaddle = paddleclass.Paddle(canvas, 'blue')
 ball = ballclass.Ball(canvas, playerPaddle, 'red')
 
