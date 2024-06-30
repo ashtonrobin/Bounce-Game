@@ -1,3 +1,4 @@
+# Modules
 import tkinter
 import time
 import random
@@ -13,13 +14,14 @@ canvas = tkinter.Canvas(tk, width = 500, height = 400, bd = 0, highlightthicknes
 canvas.pack()
 tk.update()
 
-paddle = paddleclass.Paddle(canvas, 'blue')
-ball = ballclass.Ball(canvas, paddle, 'red')
+
+playerPaddle = paddleclass.Paddle(canvas, 'blue')
+ball = ballclass.Ball(canvas, playerPaddle, 'red')
 
 # Animation
 while 1:
     if ball.hitBottom == False:
-        paddle.draw()
+        playerPaddle.draw()
         ball.draw()
     tk.update_idletasks()
     tk.update()

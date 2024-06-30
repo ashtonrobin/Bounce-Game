@@ -15,6 +15,7 @@ class Ball:
         self.canvasWidth = self.canvas.winfo_width()
         self.hitBottom = False
 
+
     def hitPaddle(self, ballPosition):
         paddlePosition = self.canvas.coords(self.paddle.id)
         if ballPosition[2] >= paddlePosition[0] and ballPosition[0] <= paddlePosition[2]:
@@ -34,7 +35,7 @@ class Ball:
             self.x = 3
         if ballPosition[2] >= self.canvasWidth:
             self.x = -3
-        if self.hitPaddle == True:
+        if self.hitPaddle(ballPosition) == True:
             self.y = -3
 
 
