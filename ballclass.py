@@ -1,7 +1,6 @@
 # Modules
 import random 
 
-# Class Def/Declaration
 class Ball:
     def __init__(self, canvas, color):
         self.canvas = canvas

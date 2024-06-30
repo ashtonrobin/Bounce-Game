@@ -13,7 +13,6 @@ canvas = tkinter.Canvas(tk, width = 500, height = 400, bd = 0, highlightthicknes
 canvas.pack()
 tk.update()
 
-# Object creation
 ball = ballclass.Ball(canvas, 'red')
 
 #Animation
