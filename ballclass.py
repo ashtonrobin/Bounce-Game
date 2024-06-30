@@ -1,5 +1,4 @@
 import random 
-import paddleclass
 
 class Ball:
     def __init__(self, canvas, paddle, color):
@@ -14,7 +13,6 @@ class Ball:
         self.canvasHeight = self.canvas.winfo_height()
         self.canvasWidth = self.canvas.winfo_width()
         self.hitBottom = False
-
 
     def hitPaddle(self, ballPosition):
         paddlePosition = self.canvas.coords(self.paddle.id)
