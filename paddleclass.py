@@ -3,8 +3,23 @@ class Paddle:
         self.canvas = canvas
         self.id = canvas.create_rectangle(0, 0, 100, 10, fill = color)
         self.canvas.move(self.id, 200, 300)
+        self.x = 0
+        self.canvasWidth = self.canvas.winfo_width()
+        self.canvas.bind_all('<KeyPress-Left>', self.turn_left)
+        self.canvas.bind_all('<KeyPress-Right>', self.turn_right)
 
     def draw(self):
-        pass
+        self.canvas.move(self.id, self.x, 0)
+        paddlePosition = self.canvas.coords(self.id)
+        if paddlePosition[0] <= 0:
+            self.x = 0
+        elif paddlePosition[0] >= self.canvasWidth:
+            self.x = 0
+
+    def turn_left(self, evt):
+        self.x = -2
+
+    def turn_right(self, evt):
+        self.x = 2
 
 
