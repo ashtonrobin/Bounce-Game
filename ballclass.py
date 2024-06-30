@@ -27,8 +27,7 @@ class Ball:
         if ballPosition[1] <= 0:
             self.y = 3
         if ballPosition[3] >= self.canvasHeight:
-            #self.hitBottom = True 
-            self.y = -3
+            self.hitBottom = True 
         if ballPosition[0] <= 0:
             self.x = 3
         if ballPosition[2] >= self.canvasWidth:
