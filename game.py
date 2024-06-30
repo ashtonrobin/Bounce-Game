@@ -14,12 +14,15 @@ canvas.pack()
 tk.update()
 
 paddle = paddleclass.Paddle(canvas, 'blue')
-ball = ballclass.Ball(canvas, 'red')
+ball = ballclass.Ball(canvas, paddle, 'red')
 
 # Animation
 while 1:
-    paddle.draw()
-    ball.draw()
+    if ball.hitBottom == False:
+        paddle.draw()
+        ball.draw()
     tk.update_idletasks()
     tk.update()
     time.sleep(0.01)
+
+
