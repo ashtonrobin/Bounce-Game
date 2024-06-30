@@ -2,6 +2,7 @@ import tkinter
 import time
 import random
 import ballclass
+import paddleclass
 
 # Initilization
 tk = tkinter.Tk()
@@ -12,10 +13,12 @@ canvas = tkinter.Canvas(tk, width = 500, height = 400, bd = 0, highlightthicknes
 canvas.pack()
 tk.update()
 
+paddle = paddleclass.Paddle(canvas, 'blue')
 ball = ballclass.Ball(canvas, 'red')
 
-#Animation
+# Animation
 while 1:
+    paddle.draw()
     ball.draw()
     tk.update_idletasks()
     tk.update()
