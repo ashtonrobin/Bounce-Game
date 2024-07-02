@@ -1,6 +1,6 @@
 # Bounce Game
-Casual game made with the python tkinter graphics module. It's entirely open source
-and I'm completely open to any feature request or contributions.
+Casual game made in python that mimics pong. It's entirely open source
+and I'm completely open to any feature requests or contributions.
 
 ## Installation & Running the game
 ### DISCLAIMER: This game is only supported on Desktop
