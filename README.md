@@ -3,7 +3,7 @@ Casual game made in python that mimics pong. It's entirely open source
 and I'm completely open to any feature requests or contributions.
 
 ## Installation & Running the game
-### DISCLAIMER: This game is only supported on Desktop
+### DISCLAIMER: This game is only supported on PC and Windows
 1. Download Python version 3.12.0 or higher from https://www.python.org/downloads/
 2. Download the latest version of Bounce from the **Releases** tab https://github.com/ashtonrobin/Bounce-Game/releases
 3. When installation is finished open the folder you saved the game to
