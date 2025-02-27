@@ -13,5 +13,5 @@ and I'm completely open to any feature requests or contributions.
 * Left Arrow: Moves paddle left
 * Right Arrow: Moves paddle right
 
-Note: You have to reopen the game when you lose
+**Note**: You have to reopen the game when you lose
 
